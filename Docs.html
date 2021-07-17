@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node Js</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+      <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+   <div class="navbar">
+
+    <div class="container flex">
+
+        <img src="logo.png" alt="Node js"> 
+        <!-- <img class="Image-container" src="images/cloud.png"> -->
+   
+         
+        <nav>
+
+            <ul class="navbar-list">
+   
+            <li><a class="nav-link" href="index.html">Home</a></li>
+          
+      
+            <li><a class="nav-link" href="Docs.html">Docs</a></li>
+            
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+
+          
+          
+          
+   
+             </ul>
+   
+            </nav>
+    
+
+   </div>
+
+    <section class="contents">
+
+
+        <div class="color-chane-btn">
+
+            <button onclick="colorchange1('#4f53d9')" class="one">Color</button>
+         <button onclick="colorchange2('#c4174f')" class="two">Color</button>
+         <button onclick="colorchange3('#1d6b89')" class="three">Color3</button>
+   
+   
+         </div>
+
+      <div class="Docs-main my-4">
+
+     
+         <div class="container grid">
+
+
+ 
+             <div class="card bg-light py-3">
+
+
+              <h3 class="my-2">Essentials</h3>
+
+              
+             <nav>
+
+
+                <ul>
+
+
+                    <li><a class="Docs-primary"href="#">Introduction</a></li>
+                    
+                    <li><a href="#">About Node</a></li>
+                    
+                    <li><a href="#">Installation</a></li>
+        
+        
+                   </ul>
+    
+
+             </nav>
+
+
+             <h3 class="my-2">Deployment</h3>
+      
+         <nav>
+
+
+           <ul>
+
+
+            <li><a href="#">Setting up a container</a></li>
+            
+            <li><a href="#">Using the CLI</a></li>
+            
+            <li><a href="#">Managing resources</a></li>
+
+            <li><a href="#">Upgrade & downgrade</a></li>
+
+
+           </ul>
+
+
+         </nav>
+
+         </div>
+
+
+            <div class="card">
+
+     
+             <h2>Introduction Node.js®</h2>
+
+             <p>As an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications. 
+                 In the following "hello world" example, many connections can be handled concurrently. 
+                 Upon each connection, the callback is fired, but if there is no work to be done, Node.js will sleep.</p>
+
+          
+                 <div class="alert alert-success">
+
+                    <i class="fas fa-info"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, sunt!
+           
+                     </div>
+
+
+                     <h3 class="my-2">Installation</h3>
+
+
+                     <p>Node.js is similar in design to, and influenced by,
+                          systems like Ruby's Event Machine and Python's Twisted. 
+                          Node.js takes the event model a bit further.</p>
+
+                    
+               <a href="#" class="btn btn-primary">Install CLI</a>
+
+               <h3>Requirements</h3>
+
+               <ul>
+   
+                <li>Windows 10, Mac OSX, Linux</li>
+                <li>Node.js v12 or higher</li>
+   
+                </ul>
+
+
+                
+            <h3>Install</h3>
+
+            <pre>
+          <code> <span class="violet">$const http = </span><span class="orange">require( <span class="green">'http'</span>);</span></code>
+
+            
+             <code>$const hostname = '127.0.0.1';</code>
+            
+             <code>$ const port = 3000;</code>
+
+
+              <code>$ const server = http.<span class="orange">createServer</span></code>
+
+              <code>$res.statusCode = 200;</code>
+
+              <code>$  res.setHeader('Content-Type');</code>
+
+              <code>$res.end('Hello World');</code>
+
+              <code>$});</code>
+
+            
+            </pre>
+           
+         
+      
+
+
+            </div>
+
+
+
+         </div>
+
+
+      </div>
+
+        
+
+    </section>
+
+
+    <footer class="footer bg-dark py-5">
+
+        <div class="container grid grid-3">
+     
+          <div>
+      
+            <h1>Node Js</h1>
+   
+           <p>Copyright &copy; 2021</p>
+   
+          </div>
+    
+            <nav>
+      
+               <ul>
+
+                 
+                 <li><a class="footer-link" href="#">Home</a></li>  
+                 <li><a class="footer-link" href="#">Features</a></li>
+                 <li><a class="footer-link" href="#">Contact</a></li>
+   
+   
+   
+               </ul>
+   
+           
+            </nav>
+    
+             <div class="social">
+   
+                <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+    
+   
+             </div>
+   
+   
+
+   
+        </div>
+
+
+   
+     </footer>
+   
+
+     <script>
+
+  
+        function colorchange1(coming){
+       
+        
+        document.querySelector(".navbar").style.background=coming;
+        document.querySelector(".bg-dark").style.background=coming;
+       
+        
+       
+        }
+       
+        function colorchange2(coming){
+       
+       
+          document.querySelector(".navbar").style.background=coming;
+          document.querySelector(".bg-dark").style.background=coming;
+       
+       }
+       
+       function colorchange3(coming){
+       
+        
+          document.querySelector(".navbar").style.background=coming;
+          document.querySelector(".bg-dark").style.background=coming;
+       
+       }
+        
+       </script>
+       
+       
+  
+
+
+
+
+    
+</body>
+</html>
